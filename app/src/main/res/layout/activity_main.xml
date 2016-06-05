@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="Settings" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Server Port"
+                android:textSize="14sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtServerPort"
+                android:layout_weight="1"
+                android:text="7000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Execution delay(seconds)"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:text="5000"
+            android:textSize="14sp"
+            android:id="@+id/txtExecutiondelay"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play advertising"
+            android:checked="true"
+            android:id="@+id/chkPlayAdvertising" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS Emulated"
+            android:id="@+id/chkEmulatedGPS" />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allow multiple stops"
+        android:id="@+id/chkAllowMultipleStops" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Query user stops"
+        android:id="@+id/chkQueryUserStops" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:background="#03A9F4"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnSave"
+        android:layout_margin="20dp"/>
+
+</LinearLayout>
